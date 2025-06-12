@@ -270,7 +270,10 @@ cc_library_shared {
     name: "libaudioclient_shim",
     shared_libs: ["libaudioclient", "libutils", "liblog"],
     header_libs: ["libmedia_headers"],
-    srcs: ["libaudioclient/AudioTrack.cpp"],
+    srcs: [
+        "libaudioclient/AudioTrack.cpp",
+        "libaudioclient/AudioSystem.cpp",
+    ],
 }
 
 cc_library {
