@@ -271,7 +271,6 @@ cc_library_shared {
     shared_libs: ["libaudioclient", "libutils", "liblog"],
     header_libs: ["libmedia_headers"],
     srcs: [
-        "libaudioclient/AudioTrack.cpp",
         "libaudioclient/AudioSystem.cpp",
     ],
 }
